@@ -34,7 +34,8 @@ export const Cart = () => {
         <h1 id="cart_head">Services Choosed</h1>
         <p id="cart_sec_head">We provide you best in class facilities</p>
       </div>
-      <div id="service_div">
+
+    {data.length>0 ? <> <div id="service_div">
         {data.map((e, i) => (
           <p>
             {i + 1}. {e}
@@ -49,7 +50,10 @@ export const Cart = () => {
         <button id="check_btn" onClick={handleClick}>
           Proceed to Checkout
         </button>
-      </div>
+      </div> </> : <div id="service_div2">Cart is Empty</div>   }  
+      
+
+
     </div>
   );
 };
