@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#navbar {
+  background-color: #2F2E2E;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:center;
+  gap: 5%;
+  z-index: 10;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 18px;
+  color: rgb(219, 219, 219);
+  font-weight: 100;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.link:hover {
+  color: white;
+  font-size: 20px;
+}

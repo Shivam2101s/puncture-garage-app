@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#shopDivMain {
+  display: flex;
+}
+
+#shopList {
+  width: 90%;
+  padding:3%;
+  height: 653px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4,21%);
+  gap: 2%;
+  overflow-y: scroll;
+}
+.shopDiv{
+  /* backdrop-filter: blur(7px); */
+  padding: 5px;
+  transition: 0.7s;
+}
+.shopDiv:hover{
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+.shopDiv img {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+}
+.shopDetailDiv{
+ background-color: rgb(46, 43, 43); 
+display: flex;
+align-items: center;
+justify-content: space-around; 
+padding: 5px;
+border-radius: 5px;
+color: white;
+transition: 0.8s;
+}
+.shopDetailDiv:hover{
+  background-color:black;
+}
+.shopRating{
+  border: 2px solid grey;
+  padding: 7px 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.shopListLink {
+  text-decoration: none;
+  width: 300px;
+  color: black;
+  align-items: center;
+}
+
+#sort_filter_div {
+  border-right: 1px solid #f3ebe0;  
+  width: 20%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+#sort_filter_div_head {
+  font-size: 25px;
+  color: rgb(21, 29, 56);
+  backdrop-filter: blur(7px);
+}
+.filterBy {
+  width: 90%;
+  padding: 10px;
+  background-color: rgb(58, 58, 58);
+  border: 2px solid black;
+  color: white;
+  font-weight: 300;
+  outline: none;
+  font-size: 14px;
+transition: 0.9s;
+}
+.filterBy:hover {
+ background-color:black;
+}
+#filterDiv {
+  margin-top: 30px;
+}
+#filterDiv select {
+  margin-top:30px;
+}
+.shop_name{
+  font-size:20px;
+  font-weight:500;
+}
+.shop_location{
+  font-size: 14px;
+  font-weight: 100;
+}
