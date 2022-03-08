@@ -25,7 +25,7 @@ export const ShopDetails = () => {
 
   const getData = () => {
     try {
-      fetch(`http://localhost:4500/${id}`)
+      fetch(`https://glacial-reaches-07546.herokuapp.com/${id}`)
         .then((d) => d.json())
         .then((res) => {
           setData(res);

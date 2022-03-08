@@ -10,7 +10,7 @@ export const Shop = () => {
 
   const getData = () => {
     try {
-      fetch("http://localhost:4500")
+      fetch("https://glacial-reaches-07546.herokuapp.com")
         .then((d) => d.json())
         .then((res) => {
           setData(res);
@@ -23,7 +23,7 @@ export const Shop = () => {
 
   const filterByLocation = (e) => {
     try {
-      fetch(`http://localhost:4500/location/${e.target.value}`)
+      fetch(`https://glacial-reaches-07546.herokuapp.com/location/${e.target.value}`)
         .then((d) => d.json())
         .then((res) => {
           setData(res);
@@ -36,7 +36,7 @@ export const Shop = () => {
 
   const filterByRating = (e) => {
     try {
-      fetch(`http://localhost:4500/rating/${e.target.value}`)
+      fetch(`https://glacial-reaches-07546.herokuapp.com/rating/${e.target.value}`)
         .then((d) => d.json())
         .then((res) => {
           setData(res);
@@ -49,7 +49,7 @@ export const Shop = () => {
 
   const filterByPayment = (e) => {
     try {
-      fetch(`http://localhost:4500/payment/${e.target.value}`)
+      fetch(`https://glacial-reaches-07546.herokuapp.com/payment/${e.target.value}`)
         .then((d) => d.json())
         .then((res) => {
           setData(res);
@@ -63,7 +63,7 @@ export const Shop = () => {
   const filterByDiscount = (e) => {
     console.log(e.target.value);
     try {
-      fetch(`http://localhost:4500/discount/${e.target.value}`)
+      fetch(`https://glacial-reaches-07546.herokuapp.com/discount/${e.target.value}`)
         .then((d) => d.json())
         .then((res) => {
           setData(res);
